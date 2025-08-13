@@ -36,7 +36,7 @@ document.getElementById('delete-book').addEventListener('click', () => {
 
 
 function handleAddButtonClick(name, author, description, url) {
-    console.log("Add button clicked with values:", name, author, description, url);
+  
 
     let bookContainer = document.getElementsByClassName("book-boxes")[0];
     let newBookBox = document.createElement("div");
