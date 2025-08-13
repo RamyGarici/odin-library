@@ -21,9 +21,11 @@
           <h1>Odin Library</h1>
         </div>
         <div class="buttons">
-          <button id="add-button"><img src="./assets/ajouter.png" />Add Books</button>
-          <button><img src="./assets/editer.png" />Edit Books</button>
-          <button><img src="./assets/supprimer.png" />Delete Books</button>
+          <button id="add-button">
+            <img src="./assets/ajouter.png" />Add Books
+          </button>
+          
+      
         </div>
       </div>
 
@@ -56,7 +58,7 @@
           <div class="book-box">
             <img
               src="https://m.media-amazon.com/images/I/71fwo9096LL._UF1000,1000_QL80_.jpg"
-               data-title="The Maze Runner"
+              data-title="The Maze Runner"
               data-author="James Dashner"
               data-description="The Maze Runner is a 2009 dystopian novel by American author James Dashner. It takes place in a world suffering from a coronal mass ejection and whose surviving civilians fight to avoid an apocalyptic illness."
             />
@@ -64,7 +66,7 @@
           <div class="book-box">
             <img
               src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1450699039i/1772910.jpg"
-                data-title="White Nights"
+              data-title="White Nights"
               data-author="Dostoyevsky"
               data-description="The narrator is a young man living in Saint Petersburg who suffers from loneliness. He gets to know and falls in love with a young woman, but the love remains unrequited as the woman misses her lover."
             />
@@ -75,12 +77,8 @@
               data-title="Lord of Rings"
               data-author="Tolkien"
               data-description="The Lord of the Rings follows Frodo Baggins's quest to destroy the One Ring, an artifact of immense power that would allow the Dark Lord Sauron to conquer Middle-earth."
-
             />
           </div>
-        
-        
-          
         </div>
       </div>
     </div>
@@ -93,12 +91,31 @@
       </div>
     </div>
 
-     <div id="book-add" class="modal">
-      <div class="modal-content">
-        <span id="close-modal">&times;</span>
-        <h2 id="modal-title"></h2>
-        <h4 id="modal-author"></h4>
-        <p id="modal-description"></p>
+    <div id="book-add" class="modal">
+      <div id="book-content" class="modal-content">
+        <span id="close-add">&times;</span>
+        <div class="input-box">
+          <label for="add-title">Title:</label>
+          <input id="add-title" type="text" />
+        </div>
+        <div class="input-box">
+          <label for="add-author">Author:</label>
+          <input id="add-author" type="text" />
+        </div>
+        <div class="input-box">
+          <label for="add-description">Description:</label>
+          <input id="add-description" type="text" />
+        </div>
+        <div class="input-box">
+          <label for="add-image">URL:</label>
+          <input id="add-image" type="text" />
+        </div>
+        <button
+          id="add-book-btn"
+          onclick="handleAddButtonClick(document.getElementById('add-title').value,document.getElementById('add-author').value,document.getElementById('add-description').value,document.getElementById('add-image').value)"
+        >
+          Add Book
+        </button>
       </div>
     </div>
 
