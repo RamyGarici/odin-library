@@ -93,7 +93,7 @@ searchInput.addEventListener('input', () => {
     const title = book.querySelector('img').dataset.title.toLowerCase();
     const author = book.querySelector('img').dataset.author.toLowerCase();
     if (title.includes(searchValue) || author.includes(searchValue)) {
-      book.style.display = 'block';
+      book.style.display = 'flex';
     } else {
       book.style.display = 'none';
     }
