@@ -21,7 +21,7 @@
           <h1>Odin Library</h1>
         </div>
         <div class="buttons">
-          <button><img src="./assets/ajouter.png" />Add Books</button>
+          <button id="add-button"><img src="./assets/ajouter.png" />Add Books</button>
           <button><img src="./assets/editer.png" />Edit Books</button>
           <button><img src="./assets/supprimer.png" />Delete Books</button>
         </div>
@@ -85,6 +85,15 @@
       </div>
     </div>
     <div id="book-modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <h2 id="modal-title"></h2>
+        <h4 id="modal-author"></h4>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+     <div id="book-add" class="modal">
       <div class="modal-content">
         <span id="close-modal">&times;</span>
         <h2 id="modal-title"></h2>

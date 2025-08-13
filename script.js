@@ -19,3 +19,23 @@ window.addEventListener('click', (e) => {
     document.getElementById('book-modal').style.display = 'none';
   }
 });
+
+
+//Add function 
+function handleAddButtonClick(name,author,description,url){
+    let bookContainer = document.getElementsByClassName("book-boxes")[0];
+    let newBookBox = document.createElement("div");
+    newBookBox.className = "book-box";
+    let newBookImage = document.createElement("img");
+    newBookImage.dataset.title = name;
+    newBookImage.dataset.author = author;
+    newBookImage.dataset.description = description;
+    newBookImage.src = url;
+    newBookBox.appendChild(newBookImage);
+
+    
+}
+
+const addButton = document.getElementById('add-button');
+
+
