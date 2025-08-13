@@ -251,3 +251,17 @@ font-weight: bold;
     margin-left: 15px;
 }
 
+
+#delete-book img{
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    
+}
+#delete-book {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
