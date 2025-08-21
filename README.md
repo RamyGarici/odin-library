@@ -39,7 +39,8 @@ Open index.html in your browser.
 
 📸 Preview
 
-![Uploading aaaaa.png…]()
+<img width="1918" height="1078" alt="aaaaa" src="https://github.com/user-attachments/assets/54cad710-a843-4fc6-836f-43e900da0aa9" />
+
 
 
 📂 Project Structure
