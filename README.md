@@ -27,7 +27,7 @@ This application is a **virtual library** that allows you to display, add, searc
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/odin-library.git
+   git clone https://github.com/RamyGarici/odin-library.git
 Open the project folder:
 
 bash
@@ -38,7 +38,8 @@ Launch the app:
 Open index.html in your browser.
 
 📸 Preview
-Add a screenshot of your project here 👇
+
+![Uploading aaaaa.png…]()
 
 
 📂 Project Structure
